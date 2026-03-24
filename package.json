@@ -1,0 +1,21 @@
+{
+  "name": "backup-gdrive",
+  "version": "2.0.0",
+  "description": "Backup file/folder lokal ke Google Drive secara otomatis",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start":  "node index.js",
+    "backup": "node index.js --now",
+    "auth":   "node index.js --auth"
+  },
+  "dependencies": {
+    "archiver":   "^6.0.1",
+    "dotenv":     "^16.4.5",
+    "googleapis": "^144.0.0",
+    "node-cron":  "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
